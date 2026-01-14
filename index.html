@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unit Converter</title>
+    <meta name="description" content="Fast and simple unit converter for Length, Volume, Mass, Temperature, Speed, Area, Time, and Digital Storage. Real-time conversion, dark mode, and copy-to-clipboard.">
+    <meta name="keywords" content="unit converter, metric to imperial, online converter, calculator, length converter, volume converter, temperature converter">
+    <title>Universal Unit Converter</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google AdSense Placeholder -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <h1>Unit Converter</h1>
+        <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+    </header>
+
     <div id="container">
-        <div id="hero">
-            <h2>Metric/Imperial Unit Converter</h2>
-            <input type="text" id="user-input"></input>
-            <button id="convert-btn" type="submit">Convert</button>
-        </div>
-        <div id="main">
-            <div class="units" id="length">
-                <h3 id="length-h3">Length (Meter/Feet)</h3>
-                <p id="length-p"></p>
-            </div>
-            <div class="units" id="volume">
-                <h3 id="volume-h3">Volume (Liters/Gallons)</h3>
-                <p id="volume-p"></p>
-            </div>
-            <div class="units" id="mass">
-                <h3 id="mass-h3">Mass (Kilograms/Pounds)</h3>
-                <p id="mass-p"></p>
-            </div>
+        <!-- Top Ad -->
+        <div class="ad-container" id="ad-top">
+            <p class="ad-placeholder">Ad Space (Top)</p>
+            <!-- ins class="adsbygoogle" ... -->
         </div>
 
+        <div id="hero">
+            <label for="user-input" class="sr-only">Enter value to convert</label>
+            <input type="number" id="user-input" placeholder="0" autofocus>
+            <!-- Convert button is removed as per 'real-time' requirement, but can keep as a trigger if needed.
+                 Since we want real-time, we remove it to declutter. -->
+        </div>
+
+        <div id="cards-container">
+            <!-- Cards will be injected here by JavaScript -->
+        </div>
+
+        <!-- Middle/Bottom Ad -->
+        <div class="ad-container" id="ad-bottom">
+            <p class="ad-placeholder">Ad Space (Bottom)</p>
+        </div>
     </div>
-    <script src="index.js"></script>
+
     <footer>
-        <p>Author: Jesse Flippen</p>
-        <p><a href="https://github.com/JesseFlip/unitConverter">View on GitHub</a></p>
+        <p>Simple. Fast. Useful.</p>
+        <p><a href="https://github.com/JesseFlip/unitConverter" target="_blank" rel="noopener">View on GitHub</a></p>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
