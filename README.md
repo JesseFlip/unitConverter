@@ -53,8 +53,9 @@ A fast, mobile-friendly tool designed for quick conversions across multiple cate
 
 * `index.js` - Real-time conversion logic.
 
-<a href="https://flipsunitconverter.netlify.app">Live Demo</a> | <a href="https://github.com/JesseFlip/unitConverter">View Code</a>
+<a href="https://flipsunitconverter.netlify.app">Live Demo</a> | <a href="(https://github.com/JesseFlip/unitConverter/blob/main/index.html)">View Code</a>
 ![alt text](unit_converter_screenshot.jpg "screenshot")
+
 
 
 
